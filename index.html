@@ -8,11 +8,12 @@
       content="Treat yourself or a loved one to our finest ingredients for a moment of pure delight!"
     />
     <meta name="keywords" content="chocolate shop candy" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Simple Chocolate</title>
   </head>
   <body>
     <!--header-->
-    <header class="container">
+    <header class="container container-header">
       <nav class="nav">
         <a href="./index.html" class="logo"
           >SIMPLY CHOCOLATE
@@ -20,36 +21,36 @@
             <use href="./images/icons.svg#logo"></use>
           </svg>
         </a>
-        <ul class="nav-menu">
-          <li>
-            <a href="./index.html">Home</a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
           </li>
-          <li>
-            <a href="#made">How it’s made?</a>
+          <li class="nav-item">
+            <a href="#made" class="nav-link">How it’s made?</a>
           </li>
-          <li>
-            <a href="#reviews">Chocolate is loved</a>
+          <li class="nav-item">
+            <a href="#reviews" class="nav-link">Chocolate is loved</a>
           </li>
         </ul>
       </nav>
-      <ul>
-        <li>
-          <a href="http://facebook.com">
-            <svg width="24" height="24">
+      <ul class="social">
+        <li class="social-list">
+          <a href="http://facebook.com" class="social-item">
+            <svg width="24" height="24" class="social-item-svg">
               <use href="./images/icons.svg#facebook"></use>
             </svg>
           </a>
         </li>
-        <li>
-          <a href="http://instagram.com">
-            <svg width="24" height="24">
+        <li class="social-list">
+          <a href="http://instagram.com" class="social-item">
+            <svg width="24" height="24" class="social-item-svg">
               <use href="./images/icons.svg#instagram"></use>
             </svg>
           </a>
         </li>
-        <li>
-          <a href="http://twitter.com">
-            <svg width="24" height="24">
+        <li class="social-list">
+          <a href="http://twitter.com" class="social-item">
+            <svg width="24" height="24" class="social-item-svg">
               <use href="./images/icons.svg#twitter"></use>
             </svg>
           </a>
@@ -57,23 +58,30 @@
       </ul>
     </header>
     <main>
-      <!-- start page -->
-      <section>
-        <h1>
-          Treat yourself or a loved one to our finest ingredients for a moment
+      <!-- hero page -->
+      <section class="container hero">
+        <h1 class="hero-title">
+          Treat yourself or a loved one to<br />
+          our finest ingredients for a moment<br />
           of pure delight!
         </h1>
-        <button type="button">Buy now</button>
-        <button type="button">How it’s made</button>
-        <a href="#"
-          >scroll down
-          <svg width="22" height="22">
-            <use href="./images/icons.svg#arrow"></use>
-          </svg>
-        </a>
+        <div class="hero-row">
+          <div class="hero-btn">
+            <button type="button" class="hero-button orange">Buy now</button>
+            <button type="button" class="hero-button">How it’s made</button>
+          </div>
+          <a href="#benefits" class="hero-arrow"
+            >scroll down
+            <div class="hero-box">
+              <svg width="22" height="22" class="hero-arrow-svg">
+                <use href="./images/icons.svg#arrow"></use>
+              </svg>
+            </div>
+          </a>
+        </div>
       </section>
       <!--benefits-->
-      <section>
+      <section id="benefits">
         <h2 hidden>benefits</h2>
         <ul>
           <li>

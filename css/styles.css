@@ -12,7 +12,10 @@ h2,
 h3,
 h4,
 h5,
-button {
+button,
+ul,
+ol,
+p {
   margin: 0;
   padding: 0;
 }
@@ -95,6 +98,7 @@ button {
 .social-item:hover {
   fill: #fd9222;
 }
+/* hero*/
 .hero {
   width: 1065px;
   border-radius: 30px;
@@ -103,6 +107,7 @@ button {
   padding-left: 40px;
   padding-bottom: 40px;
   padding-right: 40px;
+  margin-bottom: 80px;
 }
 .hero-title {
   font-weight: 500;
@@ -158,4 +163,99 @@ button {
   justify-content: center;
 }
 .hero-arrow-svg {
+}
+/* benefits */
+.benefits {
+  width: 1200px;
+  padding: 0;
+  background-color: #111;
+  margin-left: auto;
+  margin-right: auto;
+}
+.benefits-title {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+.benefits-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 88px;
+  margin: 0;
+  padding: 0;
+}
+.benefits-item {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 308px;
+}
+.benefits-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+.benefits-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+.ingredients-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+  margin-top: 120px;
+  margin-bottom: 60px;
+}
+.ingredients-title-text {
+  color: #fd9222;
+}
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 29px;
+  margin-bottom: 60px;
+}
+.ingredients-item {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  width: 260px;
+  height: 270px;
+  background-color: transparent;
+}
+.ingredients-img {
+  margin-top: 28px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ingredients-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 23px;
+}
+.ingredients-orange {
+  background-color: #fd9222;
+  color: #fff;
+}
+.ingredients-black {
+  background-color: #111;
+  color: #fff;
 }

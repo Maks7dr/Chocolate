@@ -23,6 +23,10 @@ p {
   margin: 0;
   padding: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
 /* all */
 
 .container {
@@ -138,6 +142,16 @@ p {
   padding-bottom: 40px;
   padding-right: 40px;
   margin-bottom: 80px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/hero-bg_desk@1x.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1136px;
 }
 .hero-title {
   font-weight: 500;
@@ -307,6 +321,7 @@ p {
 .ingredients-black {
   background-color: #111;
   color: #fff;
+  border: none;
 }
 /* made */
 .made {
@@ -414,6 +429,7 @@ p {
   font-size: 14px;
   color: #111;
   white-space: nowrap;
+  cursor: pointer;
 }
 /* sellers */
 .sellers {
@@ -600,6 +616,9 @@ p {
   font-style: normal;
 }
 .footer-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 .footer-address-item {
 }

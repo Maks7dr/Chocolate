@@ -8,6 +8,13 @@
       content="Treat yourself or a loved one to our finest ingredients for a moment of pure delight!"
     />
     <meta name="keywords" content="chocolate shop candy" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Simple Chocolate</title>
   </head>
@@ -116,9 +123,9 @@
       </section>
       <!--Ingridients-->
       <section class="container">
-        <h2 class="ingredients-title">
+        <h2 class="title ingredients-title">
           It all adds up to one exceptional
-          <span class="ingredients-title-text">taste</span> sensation
+          <span class="title-text">taste</span> sensation
         </h2>
         <ul class="ingredients-list">
           <li class="ingredients-item ingredients-orange">
@@ -204,138 +211,158 @@
         </ul>
       </section>
       <!--how its made-->
-      <section id="made">
-        <h2>How it’s <span>made</span>?</h2>
-        <img
-          src="./images/made/image.jpg"
-          alt="hand"
-          width="600"
-          height="400"
-        />
-        <h3>
-          Try our chocolates today and discover the perfect balance of flavor
-        </h3>
-        <ol>
-          <li>
-            <p>
-              Heat the milk in a saucepan without bringing it to a boil. Add
-              sugar and cocoa powder.
-            </p>
-          </li>
-          <li>
-            <p>
-              At the same time, prepare a water bath. Melt the butter on it.
-            </p>
-          </li>
-          <li>
-            <p>
-              "Mix" the milk mixture and already liquid butter. Mix thoroughly
-              with a silicone spatula so that the mass becomes uniform and
-              silky.
-            </p>
-          </li>
-          <li>
-            <p>Heat the mixture over low heat, letting it barely boil.</p>
-          </li>
-          <li>
-            <p>
-              Pour the chocolate into special containers (can be replaced with
-              ice molds). Allow to cool and harden.
-            </p>
-          </li>
-        </ol>
+      <section id="made" class="container made">
+        <h2 class="title made-title">
+          How it’s <span class="title-text">made</span>?
+        </h2>
+        <div class="made-box">
+          <img
+            src="./images/made/image.jpg"
+            alt="hand"
+            width="600"
+            height="400"
+            class="made-img"
+          />
+          <div class="made-list-box">
+            <h3 class="subtitle made-subtitle">
+              Try our chocolates today and<br />
+              discover the perfect balance of flavor
+            </h3>
+            <ol class="made-list">
+              <li class="made-item">
+                <p class="made-text">
+                  Heat the milk in a saucepan without bringing it to a boil. Add
+                  sugar and cocoa powder.
+                </p>
+              </li>
+              <li class="made-item">
+                <p class="made-text">
+                  At the same time, prepare a water bath. Melt the butter on it.
+                </p>
+              </li>
+              <li class="made-item">
+                <p class="made-text">
+                  "Mix" the milk mixture and already liquid butter. Mix
+                  thoroughly with a silicone spatula so that the mass becomes
+                  uniform and silky.
+                </p>
+              </li>
+              <li class="made-item">
+                <p class="made-text">
+                  Heat the mixture over low heat, letting it barely boil.
+                </p>
+              </li>
+              <li class="made-item">
+                <p class="made-text">
+                  Pour the chocolate into special containers (can be replaced
+                  with ice molds). Allow to cool and harden.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
       </section>
       <!--products-->
-      <section>
-        <h2>Our <span>products</span></h2>
-        <ul>
-          <li>
+      <section class="container products">
+        <h2 class="title products-title">
+          Our <span class="title-text">products</span>
+        </h2>
+        <ul class="products-list">
+          <li class="products-item">
             <img
               src="./images/products/img-1-min.jpg"
               alt="Orange "
               width="230"
               height="201"
+              class="products-img"
             />
-            <h3>Orange</h3>
-            <p>Dark chocolate</p>
-            <button type="button">45 UAH</button>
+            <h3 class="subtitle products-subtitle">Orange</h3>
+            <p class="products-text">Dark chocolate</p>
+            <button type="button" class="products-btn">45 UAH</button>
           </li>
-          <li>
+          <li class="products-item">
             <img
               src="./images/products/img-2-min.jpg"
               alt="Apple&Cranberry"
               width="230"
               height="201"
+              class="products-img"
             />
-            <h3>Apple&Cranberry</h3>
-            <p>Milk chocolate</p>
-            <button type="button">50 UAH</button>
+            <h3 class="subtitle products-subtitle">Apple&Cranberry</h3>
+            <p class="products-text">Milk chocolate</p>
+            <button type="button" class="products-btn">50 UAH</button>
           </li>
-          <li>
+          <li class="products-item">
             <img
               src="./images/products/img-3-min.jpg"
               alt="Lime&Sea salt"
               width="230"
               height="201"
+              class="products-img"
             />
-            <h3>Lime&Sea salt</h3>
-            <p>Dark chocolate</p>
-            <button type="button">66 UAH</button>
+            <h3 class="subtitle products-subtitle">Lime&Sea salt</h3>
+            <p class="products-text">Dark chocolate</p>
+            <button type="button" class="products-btn">66 UAH</button>
           </li>
-          <li>
+          <li class="products-item">
             <img
               src="./images/products/img-4-min.jpg"
               alt="Pineapple"
               width="230"
               height="201"
+              class="products-img"
             />
-            <h3>Pineapple</h3>
-            <p>Dark chocolate</p>
-            <button type="button">54 UAH</button>
+            <h3 class="subtitle products-subtitle">Pineapple</h3>
+            <p class="products-text">Dark chocolate</p>
+            <button type="button" class="products-btn">54 UAH</button>
           </li>
-          <li>
+          <li class="products-item">
             <img
               src="./images/products/img-5-min.jpg"
               alt="Classic"
               width="230"
               height="201"
+              class="products-img"
             />
-            <h3>Classic</h3>
-            <p>Milk chocolate</p>
-            <button type="button">45 UAH</button>
+            <h3 class="subtitle products-subtitle">Classic</h3>
+            <p class="products-text">Milk chocolate</p>
+            <button type="button" class="products-btn">45 UAH</button>
           </li>
-          <li>
+          <li class="products-item">
             <img
               src="./images/products/img-6-min.jpg"
               alt="Honey"
               width="230"
               height="201"
+              class="products-img"
             />
-            <h3>Honey</h3>
-            <p>Milk chocolate</p>
-            <button type="button">50 UAH</button>
+            <h3 class="subtitle products-subtitle">Honey</h3>
+            <p class="products-text">Milk chocolate</p>
+            <button type="button" class="products-btn">50 UAH</button>
           </li>
-          <li>
+          <li class="products-item">
             <img
               src="./images/products/img-7-min.jpg"
               alt="Roasted fruits"
               width="230"
               height="201"
+              class="products-img"
             />
-            <h3>Roasted fruits</h3>
-            <p>Dark chocolate</p>
+            <h3 class="subtitle products-subtitle">Roasted fruits</h3>
+            <p class="products-text">Dark chocolate</p>
             <button type="button">66 UAH</button>
           </li>
-          <li>
+          <li class="products-item" class="products-btn">
             <img
               src="./images/products/img-8-min.jpg"
               alt="Classic"
               width="230"
               height="201"
+              class="products-img"
             />
-            <h3>Classic</h3>
-            <p>White chocolate</p>
-            <button type="button">54 UAH</button>
+            <h3 class="subtitle products-subtitle">Classic</h3>
+            <p class="products-text">White chocolate</p>
+            <button type="button" class="products-btn">54 UAH</button>
           </li>
         </ul>
       </section>

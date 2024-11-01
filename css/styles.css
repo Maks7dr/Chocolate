@@ -2,10 +2,14 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  background-color: #fff;
+  background-color: #fafafa;
   color: #111;
-  margin: 0;
+  margin: 0 auto 0 auto;
   padding: 0;
+  border: 1px solid #000;
+  width: 1200px;
+  height: 100%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 h1,
 h2,
@@ -19,20 +23,42 @@ p {
   margin: 0;
   padding: 0;
 }
+/* all */
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+.title-text {
+  color: #fd9222;
+}
+.subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+}
+
 /* header*/
 .container {
   width: 1136px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
 }
 .container-header {
   display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
-  justify-content: space-between;
 }
 .nav {
   display: flex;
+  margin-right: 90px;
+  align-items: center;
 }
 .logo {
   display: flex;
@@ -46,7 +72,9 @@ p {
   line-height: 1.11111;
   letter-spacing: -0.03em;
   color: #111;
+  width: 213px;
 }
+
 .logo-svg {
   margin-left: 4px;
   fill: #fcf1e0;
@@ -55,11 +83,14 @@ p {
   display: flex;
   list-style-type: none;
   gap: 24px;
-  margin: 0;
-  align-items: center;
-  padding-left: 0;
+  width: 320px;
 }
 .nav-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14286;
+  letter-spacing: -0.02em;
+  color: #111;
 }
 .nav-link {
   text-decoration: none;
@@ -71,8 +102,6 @@ p {
 .social {
   display: flex;
   gap: 14px;
-  padding-left: 0;
-  margin: 0;
 }
 .social-list {
   width: 40px;
@@ -98,9 +127,9 @@ p {
 .social-item:hover {
   fill: #fd9222;
 }
+
 /* hero*/
 .hero {
-  width: 1065px;
   border-radius: 30px;
   background-color: rgba(17, 17, 17, 0.4);
   padding-top: 381px;
@@ -208,23 +237,13 @@ p {
   color: rgba(255, 255, 255, 0.7);
 }
 .ingredients-title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.16667;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #111;
   margin-top: 120px;
   margin-bottom: 60px;
-}
-.ingredients-title-text {
-  color: #fd9222;
 }
 .ingredients-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 29px;
+  gap: 32px;
   margin-bottom: 60px;
 }
 .ingredients-item {
@@ -258,4 +277,102 @@ p {
 .ingredients-black {
   background-color: #111;
   color: #fff;
+}
+.made {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.made-box {
+  display: flex;
+}
+.made-title {
+  margin-bottom: 50px;
+}
+.made-img {
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-color: rgba(17, 17, 17, 0.4), url("path_to_image");
+  margin-right: 20px;
+}
+.made-list-box {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border-radius: 15px;
+  width: 516px;
+  height: 400px;
+  background-color: #fff;
+  justify-content: center;
+}
+.made-subtitle {
+  margin-bottom: 28px;
+}
+.made-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.made-item {
+  list-style-type: none;
+  margin-left: 8px;
+}
+.made-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+.products {
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.products-title {
+  margin-bottom: 50px;
+}
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 18px;
+  row-gap: 24px;
+  justify-content: center;
+}
+.products-item {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  width: 270px;
+  height: 364px;
+  background-color: #fff;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.products-img {
+  display: block;
+  margin-bottom: 8px;
+}
+.products-subtitle {
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.products-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+  margin-bottom: 18px;
+}
+.products-btn {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  padding: 8px 20px;
+  width: 94px;
+  height: 33px;
+  background-color: #fafafa;
 }

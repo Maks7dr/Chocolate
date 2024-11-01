@@ -144,8 +144,8 @@ img {
   margin-bottom: 80px;
   background-image: linear-gradient(
       to bottom,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
     ),
     url(../images/hero/hero-bg_desk@1x.jpg);
   background-position: center;
@@ -243,6 +243,7 @@ img {
   background-color: #111;
   margin-left: auto;
   margin-right: auto;
+  align-items: baseline;
 }
 .benefits-title {
   visibility: hidden;
@@ -553,7 +554,7 @@ img {
 }
 .footer-box {
   display: flex;
-  margin-bottom: 74px;
+  margin-bottom: 50px;
 }
 .footer-title {
   font-weight: 500;
@@ -631,6 +632,12 @@ img {
   color: #fff;
   cursor: pointer;
   text-decoration: none;
+}
+.footer-menu-box {
+  display: flex;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 1136px;
+  padding-top: 24px;
 }
 .footer-menu-list {
   display: flex;

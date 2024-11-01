@@ -350,7 +350,7 @@
             />
             <h3 class="subtitle products-subtitle">Roasted fruits</h3>
             <p class="products-text">Dark chocolate</p>
-            <button type="button">66 UAH</button>
+            <button type="button" class="products-btn">66 UAH</button>
           </li>
           <li class="products-item" class="products-btn">
             <img
@@ -367,132 +367,160 @@
         </ul>
       </section>
       <!--top sellers-->
-      <section>
-        <h2>Top sellers</h2>
-        <ul>
-          <li>
+      <section class="container sellers">
+        <h2 class="title sellers-title">
+          <span class="title-text">Top</span> sellers
+        </h2>
+        <ul class="sellers-list">
+          <li class="sellers-item">
             <img
               src="./images/sellers/img-1-min.jpg"
               alt="CHOCOLATE WITH NUTS"
               width="368"
               height="464"
+              class="sellers-img"
             />
-            <h3>CHOCOLATE WITH NUTS</h3>
+            <h3 class="subtitle sellers-subtitle">CHOCOLATE WITH NUTS</h3>
           </li>
-          <li>
+          <li class="sellers-item">
             <img
               src="./images/sellers/img-2-min.jpg"
               alt="CHOCOLATE WITH FRUITS"
               width="368"
               height="464"
+              class="sellers-img"
             />
-            <h3>CHOCOLATE WITH FRUITS</h3>
+            <h3 class="subtitle sellers-subtitle">CHOCOLATE WITH FRUITS</h3>
           </li>
-          <li>
+          <li class="sellers-item">
             <img
               src="./images/sellers/img-3-min.jpg"
               alt="DARK CHOCOLATE"
               width="368"
               height="464"
+              class="sellers-img"
             />
-            <h3>DARK CHOCOLATE</h3>
+            <h3 class="subtitle sellers-subtitle">DARK CHOCOLATE</h3>
           </li>
         </ul>
       </section>
       <!--rewiews-->
-      <section id="reviews">
-        <h2>Chocolate is loved</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/rewiews/img-1-min.png"
-              alt="Victoria Dobrzhanska"
-              width="80"
-              height="80"
-            />
-            <h3>Victoria Dobrzhanska</h3>
-            <p>
+      <section id="reviews" class="container rewiews">
+        <h2 class="title rewiews-title">
+          <span class="title-text">Chocolate</span> is loved
+        </h2>
+        <ul class="rewiews-list">
+          <li class="rewiews-item">
+            <div class="rewiews-item-box">
+              <img
+                src="./images/rewiews/img-1-min.png"
+                alt="Victoria Dobrzhanska"
+                width="80"
+                height="80"
+                class="rewiews-img"
+              />
+              <h3 class="subtitle rewiews-subtitle">Victoria Dobrzhanska</h3>
+            </div>
+            <p class="rewiews-text">
               I love this chocolate bar. Perfect combination of light crispy
               wafer, covered in a thin layer chocolate.
             </p>
           </li>
-          <li>
-            <img
-              src="./images/rewiews/img-2-min.png"
-              alt="Nazar Babenko"
-              width="80"
-              height="80"
-            />
-            <h3>Nazar Babenko</h3>
-            <p>
+          <li class="rewiews-item">
+            <div class="rewiews-item-box">
+              <img
+                src="./images/rewiews/img-2-min.png"
+                alt="Nazar Babenko"
+                width="80"
+                height="80"
+                class="rewiews-img"
+              />
+              <h3 class="subtitle rewiews-subtitle">Nazar Babenko</h3>
+            </div>
+            <p class="rewiews-text">
               This chocolate confection is a delight! A delight! The wafer is
               light and crisp, the hazelnut cream is smooth, and the chocolate
               is good.
             </p>
           </li>
-          <li>
-            <img
-              src="./images/rewiews/img-3-min.png"
-              alt="Olena Kampusch"
-              width="80"
-              height="80"
-            />
-            <h3>Olena Kampusch</h3>
-            <p>
+          <li class="rewiews-item">
+            <div class="rewiews-item-box">
+              <img
+                src="./images/rewiews/img-3-min.png"
+                alt="Olena Kampusch"
+                width="80"
+                height="80"
+                class="rewiews-img"
+              />
+              <h3 class="subtitle rewiews-subtitle">Olena Kampusch</h3>
+            </div>
+            <p class="rewiews-text">
               Chocolate is a family favourite treat. Love the delicious smooth
               chocolate and the creaminess inside. The wafer is soft but
               crunchy.
             </p>
           </li>
         </ul>
-        <button type="button">Leave a review</button>
+        <button type="button" class="rewiews-btn">Leave a review</button>
       </section>
     </main>
-    <footer>
-      <p>Chocolate a delicious cure for a bad day</p>
-      <p>Social networks</p>
-      <ul>
-        <li>
-          <a href="http://facebook.com">
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#facebook"></use>
-            </svg>
-          </a>
+    <footer class="footer">
+      <div class="footer-box">
+        <p class="footer-title">
+          <span class="footer-title-text">Chocolate</span> a delicious cure for
+          a bad day
+        </p>
+        <div class="footer-social-box">
+          <p class="footer-subtitle">Social networks</p>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a href="http://facebook.com" class="footer-link">
+                <svg width="24" height="24" class="footer-link-svg">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="http://instagram.com" class="footer-link">
+                <svg width="24" height="24" class="footer-link-svg">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="http://twitter.com" class="footer-link">
+                <svg width="24" height="24" class="footer-link-svg">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <address class="footer-address">
+          <p class="footer-subtitle">Contact us</p>
+          <ul class="footer-address-list">
+            <li class="footer-address-item">
+              <a href="tel:+380684439426" class="footer-address-link"
+                >+380 (68) 443-94-26</a
+              >
+            </li>
+            <li class="footer-address-item">
+              <a href="mailto:simplychoc@gmail.com" class="footer-address-link"
+                >simplychoc@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+      <ul class="footer-menu-list">
+        <li class="footer-menu-item">
+          <a href="./index.html" class="footer-menu-link">Home</a>
         </li>
-        <li>
-          <a href="http://instagram.com">
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#instagram"></use>
-            </svg>
-          </a>
+        <li class="footer-menu-item">
+          <a href="#made" class="footer-menu-link">How it’s made?</a>
         </li>
-        <li>
-          <a href="http://twitter.com">
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-
-      <address>
-        <p>Contact us</p>
-        <li>
-          <a href="tel:+380684439426">+380 (68) 443-94-26</a>
-        </li>
-        <li>
-          <a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
-        </li>
-      </address>
-      <ul>
-        <li>
-          <a href="./index.html">Home</a>
-        </li>
-        <li>
-          <a href="#made">How it’s made?</a>
-        </li>
-        <li>
-          <a href="#reviews">Chocolate is loved</a>
+        <li class="footer-menu-item">
+          <a href="#reviews" class="footer-menu-link">Chocolate is loved</a>
         </li>
       </ul>
     </footer>

@@ -269,6 +269,16 @@ img {
   margin-bottom: 50px;
   width: 308px;
 }
+.benefits-svg {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 4px;
+  justify-content: center;
+  align-items: center;
+}
 .benefits-item-title {
   font-weight: 600;
   font-size: 18px;
@@ -301,6 +311,7 @@ img {
   width: 260px;
   height: 270px;
   background-color: transparent;
+  position: relative;
 }
 .ingredients-img {
   margin-top: 28px;
@@ -325,6 +336,20 @@ img {
   color: #fff;
   border: none;
 }
+.ingredients-arrow {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+}
+.fill-orange {
+  fill: #fd9222;
+  stroke: #fafafa;
+}
+.fill {
+  fill: #fafafa;
+  stroke: #fd9222;
+}
 /* made */
 .made {
   display: block;
@@ -333,6 +358,7 @@ img {
 }
 .made-box {
   display: flex;
+  position: relative;
 }
 .made-title {
   margin-bottom: 50px;
@@ -342,6 +368,14 @@ img {
   background-repeat: no-repeat;
   background-color: rgba(17, 17, 17, 0.4), url("path_to_image");
   margin-right: 20px;
+}
+.made-play {
+  position: absolute;
+  top: 178px;
+  left: 278px;
+  cursor: pointer;
+}
+.fill-play {
 }
 .made-list-box {
   display: flex;

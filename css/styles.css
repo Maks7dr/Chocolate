@@ -487,11 +487,16 @@ img {
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 .sellers-img {
   border-radius: 15px 15px 0 0;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: filter 0.3s ease;
 }
 .sellers-subtitle {
   border-bottom: 1px solid rgba(17, 17, 17, 0.1);
@@ -505,7 +510,21 @@ img {
   padding-top: 28px;
   padding-bottom: 28px;
 }
-
+.sellers-overlay {
+  position: absolute;
+  width: 288px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.sellers-item:hover .sellers-overlay {
+  opacity: 1;
+}
+.sellers-item:hover .sellers-img {
+  filter: blur(5px);
+}
 /* rewiews */
 .rewiews {
   padding-top: 60px;

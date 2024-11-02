@@ -793,12 +793,12 @@ img {
 .modal-form {
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }
 .modal-box {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  margin-bottom: 18px;
 }
 .modal-text {
   letter-spacing: -0.02em;
@@ -813,6 +813,7 @@ img {
   top: 50%;
   left: 24px;
   transform: translateY(-50%);
+  stroke: #404040;
 }
 .modal-container {
   border: 1.5px solid rgba(17, 17, 17, 0.05);
@@ -823,6 +824,8 @@ img {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
   background-color: transparent;
   outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-commemt-container {
   border: 1.5px solid rgba(17, 17, 17, 0.05);
@@ -837,5 +840,71 @@ img {
   background-color: transparent;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-commemt-container:focus {
+  border-color: #fd9222;
+}
+.modal-container:focus + .modal-svg {
+  stroke: #fd9222;
+}
+.modal-container:focus {
+  border-color: #fd9222;
+}
+.checkbox {
+  margin-bottom: 40px;
+}
+.visually-hidden {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+.modal-label {
+  display: flex;
+  align-items: center;
+}
+.modal-checkbox {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  margin-right: 12px;
+}
+.modal-flag {
+  position: absolute;
+}
+.modal-checkbox-text {
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.6);
+}
+.modal-link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fd9222;
+}
+.modal-btn {
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 117px;
+  height: 45px;
+  background: #fd9222;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.visually-hidden:checked + .modal-label .modal-checkbox {
+  background-color: #fd9222;
+  border-radius: 6px;
+  stroke: #fafafa;
 }
 /* #endregion modal-overlay*/

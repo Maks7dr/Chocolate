@@ -675,7 +675,7 @@
           <div class="modal-box">
             <label for="name" class="modal-text">Name</label>
             <div class="modal-box-svg">
-              <input type="text" id="name" class="modal-container" />
+              <input type="text" id="name" class="modal-container" autofocus />
               <svg width="24" height="24" class="modal-svg">
                 <use href="./images/icons.svg#name"></use>
               </svg>
@@ -708,12 +708,21 @@
               class="modal-commemt-container"
             ></textarea>
           </div>
-          <div class="modal-box">
-            <label for="checkbox"></label>I accept the terms and conditions of
-            the Privacy Policy
-            <input type="checkbox" id="checkbox" class="" />
+          <div class="modal-box checkbox">
+            <input type="checkbox" id="checkbox" class="visually-hidden" />
+            <label for="checkbox" class="modal-label">
+              <span class="modal-checkbox">
+                <svg width="20" height="20" class="modal-flag">
+                  <use href="./images/icons.svg#flag"></use>
+                </svg>
+              </span>
+              <span class="modal-checkbox-text"
+                >I accept the terms and conditions of the
+                <a href="" class="modal-link">Privacy Policy</a>
+              </span>
+            </label>
           </div>
-          <button type="button">Send</button>
+          <button type="button" class="modal-btn">Send</button>
         </form>
       </div>
     </div>

@@ -1,3 +1,4 @@
+/* #region Base */
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -27,6 +28,7 @@ img {
   display: block;
   max-width: 100%;
 }
+/* #endregion*/
 /* all */
 
 .container {

@@ -659,5 +659,63 @@
         </div>
       </div>
     </footer>
+    /* modal-overlay */
+    <div class="modal-overlay">
+      <div class="modal">
+        <button type="button" class="exit">
+          <svg width="28" height="28">
+            <use href="./images/icons.svg#exit"></use>
+          </svg>
+        </button>
+        <p class="title modal-title">
+          LEAVE A REVIEW ABOUT<br />
+          <span class="title-text">OUR CHOCOLATE</span>
+        </p>
+        <form class="modal-form">
+          <div class="modal-box">
+            <label for="name" class="modal-text">Name</label>
+            <div class="modal-box-svg">
+              <input type="text" id="name" class="modal-container" />
+              <svg width="24" height="24" class="modal-svg">
+                <use href="./images/icons.svg#name"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-box">
+            <label for="email" class="modal-text">Email</label>
+            <div class="modal-box-svg">
+              <input type="email" id="email" class="modal-container" />
+              <svg width="24" height="24" class="modal-svg">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-box">
+            <label for="tel" class="modal-text">Phone number</label>
+            <div class="modal-box-svg">
+              <input type="tel" id="tel" class="modal-container" />
+              <svg width="24" height="24" class="modal-svg">
+                <use href="./images/icons.svg#tel"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-box">
+            <label for="comment" class="modal-text"> Comment</label>
+            <textarea
+              name="Comment"
+              id="comment"
+              placeholder="Enter text"
+              class="modal-commemt-container"
+            ></textarea>
+          </div>
+          <div class="modal-box">
+            <label for="checkbox"></label>I accept the terms and conditions of
+            the Privacy Policy
+            <input type="checkbox" id="checkbox" class="" />
+          </div>
+          <button type="button">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

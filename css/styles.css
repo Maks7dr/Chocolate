@@ -28,6 +28,9 @@ img {
   display: block;
   max-width: 100%;
 }
+button {
+  cursor: pointer;
+}
 /* #endregion*/
 /* all */
 
@@ -901,10 +904,23 @@ img {
   color: #fff;
   border: none;
   cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .visually-hidden:checked + .modal-label .modal-checkbox {
   background-color: #fd9222;
   border-radius: 6px;
   stroke: #fafafa;
 }
+.modal-btn:hover {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
+.modal-container:invalid {
+  border: 1.5px solid #e74a3b;
+}
+.modal-container:invalid + .modal-svg {
+  stroke: #e74a3b;
+}
+
 /* #endregion modal-overlay*/

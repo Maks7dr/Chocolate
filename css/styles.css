@@ -647,7 +647,8 @@ button {
 
   width: 40px;
   height: 40px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link {
   display: flex;
@@ -659,12 +660,10 @@ button {
 .footer-social-item:hover {
   border-color: #fd9222;
 }
-
 .footer-link-svg {
   fill: #fff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-link-svg:hover {
+.footer-social-item:hover .footer-link-svg {
   fill: #fd9222;
 }
 .footer-address {
@@ -765,7 +764,14 @@ button {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  opacity: 1px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 .modal {
   position: absolute;

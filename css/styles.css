@@ -223,23 +223,17 @@ button {
   margin-left: 14px;
   border-radius: 100%;
   background-color: #fff;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    height 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero-box:hover {
-  width: 28px;
-  height: 28px;
 }
 .hero-arrow-svg {
+  transition: rotate(-90deg);
   fill: #fd9222;
 }
-.hero-arrow-svg:hover {
-  width: 10px;
-  height: 6px;
-  fill: #fd9222;
+.hero-arrow:focus .hero-box,
+.hero-arrow:focus .hero-arrow-svg {
+  transform: scale(0.8) rotate(-90deg);
 }
 /* benefits */
 .benefits {

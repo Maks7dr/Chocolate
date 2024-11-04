@@ -1,6 +1,7 @@
 // Select the modal overlay and exit button
 const modalOverlay = document.querySelector(".modal-overlay");
 const exitButton = document.querySelector(".exit");
+const openModalButton = document.getElementById("open-modal-btn");
 
 // Function to open the modal
 function openModal() {
@@ -12,11 +13,11 @@ function closeModal() {
   modalOverlay.style.display = "none"; // Hide the modal
 }
 
+// Add event listener to the open modal button
+openModalButton.addEventListener("click", openModal);
+
 // Add event listener to the exit button
 exitButton.addEventListener("click", closeModal);
-
-// Example: Open the modal when a button is clicked
-document.querySelector("#open-modal-btn").addEventListener("click", openModal);
 
 // Optional: Close the modal when clicking outside of it
 modalOverlay.addEventListener("click", (event) => {

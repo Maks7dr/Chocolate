@@ -373,6 +373,7 @@ button {
   cursor: pointer;
 }
 .fill-play {
+  display: block;
 }
 .made-list-box {
   display: flex;

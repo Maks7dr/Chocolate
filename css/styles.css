@@ -21,7 +21,8 @@ p {
   margin: 0;
   padding: 0;
 }
-ul {
+ul,
+ol {
   list-style-type: none;
 }
 img {
@@ -435,6 +436,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 80px;
 }
 .ingredients-title {
   margin-bottom: 32px;
@@ -497,6 +499,9 @@ a {
   display: none;
 }
 @media screen and (min-width: 768px) {
+  .ingridients {
+    margin-bottom: 100px;
+  }
   .ingredients-title {
     margin-bottom: 50px;
     width: 412px;
@@ -521,6 +526,9 @@ a {
   }
 }
 @media screen and (min-width: 1200px) {
+  .ingridients {
+    margin-bottom: 120px;
+  }
   .ingredients-list {
     row-gap: 24px;
     column-gap: 32px;
@@ -536,5 +544,111 @@ a {
 /*#endregion ingridients*/
 
 /* #region made*/
+.made {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.made-title {
+  margin-bottom: 32px;
+}
+.made-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.made-img {
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(17, 17, 17, 0.4), url("path_to_image");
+  width: 335px;
+  height: 500px;
+  margin-bottom: 20px;
+}
+.made-play {
+  position: absolute;
+  top: 233px;
+  left: 150px;
+  cursor: pointer;
+}
+.fill-play {
+  display: block;
+}
+.made-list-box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 14px;
+  border-radius: 15px;
+  width: 335px;
+  height: 456px;
+  background-color: #fff;
+  justify-content: center;
+}
+.made-subtitle {
+  margin-bottom: 20px;
+}
+.made-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.made-item {
+  margin-left: 16px;
+}
+.made-text {
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+@media screen and (min-width: 768px) {
+  .made {
+    margin-bottom: 100px;
+  }
+  .made-title {
+    margin-bottom: 50px;
+  }
+  .made-img {
+    width: 614px;
+    height: 400px;
+  }
+  .made-play {
+    top: 178px;
+    left: 337px;
+  }
+  .made-list-box {
+    padding: 32px;
+    border-radius: 15px;
+    width: 614px;
+    height: 356px;
+  }
+  .made-subtitle {
+    margin-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .made {
+    margin-bottom: 120px;
+  }
+  .made-img {
+    width: 600px;
+  }
+  .made-play {
+    top: 178px;
+    left: 278px;
+  }
+  .made-box {
+    flex-direction: row;
+  }
+  .made-list-box {
+    width: 452px;
+    height: 336px;
+  }
+  .made-list {
+    gap: 18px;
+  }
+}
 /*#endregion made*/

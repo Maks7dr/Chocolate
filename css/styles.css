@@ -37,10 +37,14 @@ a {
   text-decoration: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.16667;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
@@ -52,12 +56,17 @@ a {
 .subtitle {
   font-weight: 600;
   font-size: 18px;
-  line-height: 1.33333;
+  line-height: 1.33;
 }
-
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
 /* #endregion*/
 
-/* #region  visually*/
+/* #region  hidden*/
 
 .hidden {
   display: none;
@@ -341,6 +350,7 @@ a {
 /* #endregion hero pages*/
 
 /* #region benefits*/
+
 .benefits {
   background-color: #111;
   padding-top: 20px;
@@ -419,3 +429,112 @@ a {
   }
 }
 /* #endregion benefits*/
+
+/*#region ingridients*/
+.ingridients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ingredients-title {
+  margin-bottom: 32px;
+  width: 283px;
+}
+.ingredients-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+.ingredients-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  width: 335px;
+  height: 270px;
+  background-color: transparent;
+  position: relative;
+}
+.ingredients-img {
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ingredients-text {
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 28px;
+}
+.ingredients-orange {
+  background-color: #fd9222;
+  color: #fff;
+}
+.ingredients-black {
+  background-color: #111;
+  color: #fff;
+  border: none;
+}
+.ingredients-arrow {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+}
+.fill-orange {
+  fill: #fd9222;
+  stroke: #fafafa;
+}
+.fill {
+  fill: #fafafa;
+  stroke: #fd9222;
+}
+.hiddens {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .ingredients-title {
+    margin-bottom: 50px;
+    width: 412px;
+  }
+  .ingredients-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 80px;
+  }
+  .ingredients-item {
+    width: 336px;
+    gap: 16px;
+  }
+  .hiddens {
+    display: block;
+  }
+
+  .ingredients-text {
+    margin-left: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ingredients-list {
+    row-gap: 24px;
+    column-gap: 32px;
+  }
+  .ingredients-item {
+    width: 260px;
+    gap: 36px;
+  }
+  .ingredients-img {
+    margin-top: 28px;
+  }
+}
+/*#endregion ingridients*/
+
+/* #region made*/
+
+/*#endregion made*/

@@ -633,22 +633,28 @@ a {
   .made {
     margin-bottom: 120px;
   }
+  .made-box {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
   .made-img {
+    margin-bottom: 0;
     width: 600px;
   }
   .made-play {
     top: 178px;
     left: 278px;
   }
-  .made-box {
-    flex-direction: row;
-  }
   .made-list-box {
-    width: 452px;
-    height: 336px;
+    width: 516px;
+    height: 400px;
   }
   .made-list {
     gap: 18px;
+  }
+  .made-item {
+    margin-left: 8px;
   }
 }
 /*#endregion made*/

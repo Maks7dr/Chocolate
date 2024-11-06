@@ -42,8 +42,8 @@
   <circle cx="22" cy="22" r="21.5" stroke="white" />
 </symbol>
 <symbol id="exit" viewBox="0 0 28 28">
- <path d="M21 7L7 21"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M7 7L21 21"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+ <path d="M21 7L7 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M7 7L21 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </symbol>
 <symbol id="name" viewBox="0 0 24 24">
   <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />

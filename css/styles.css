@@ -1341,9 +1341,6 @@ a {
   fill: transparent;
   margin-right: 12px;
 }
-.modal-flag {
-  position: absolute;
-}
 .modal-checkbox-text {
   font-size: 12px;
   letter-spacing: -0.02em;
@@ -1450,23 +1447,6 @@ a {
   visibility: visible;
   pointer-events: auto;
 }
-.exit-white {
-  stroke: #fafafa;
-}
-.mobile-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: flex-start;
-}
-.mobile-item {
-}
-.mobile-link {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: -0.02em;
-  color: #fafafa;
-}
 .mobile-menu-container {
   position: relative;
   padding-top: 136px;
@@ -1475,9 +1455,28 @@ a {
   flex-direction: column;
   height: 100%;
 }
-.mobile-navig:hover,
-.mobile-navig:focus {
-  color: #404bbf;
+.exit-white {
+  stroke: #fafafa;
+}
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: auto;
+}
+.mobile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.mobile-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+.menu-orange {
+  color: #fd9222;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {

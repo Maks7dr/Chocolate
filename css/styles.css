@@ -1213,7 +1213,9 @@ a {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  opacity: 1;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .modal-overlay.is-open {
   opacity: 1;
@@ -1241,6 +1243,9 @@ a {
   right: 14px;
   border: none;
   background-color: transparent;
+}
+.exit-black {
+  stroke: #111;
 }
 .modal-title {
   text-align: left;
@@ -1427,3 +1432,56 @@ a {
   }
 }
 /*#endregion modal-overlay*/
+
+/*#region menu-overlay*/
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.exit-white {
+  stroke: #fafafa;
+}
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+.mobile-item {
+}
+.mobile-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+.mobile-menu-container {
+  position: relative;
+  padding-top: 136px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.mobile-navig:hover,
+.mobile-navig:focus {
+  color: #404bbf;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+/*#endregion menu-overlay*/

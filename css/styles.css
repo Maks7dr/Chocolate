@@ -825,7 +825,7 @@ a {
     height: 544px;
   }
   .hiddens-sellers {
-    display: block;
+    display: flex;
   }
   .sellers-img {
     width: 334px;
@@ -851,7 +851,7 @@ a {
     width: 368px;
   }
   .hiddens-desktop-sellers {
-    display: block;
+    display: flex;
   }
   .sellers-subtitle {
     width: 368px;

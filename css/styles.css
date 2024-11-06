@@ -1351,9 +1351,9 @@ a {
 }
 .modal-btn {
   border-radius: 100px;
-  padding: 14px 40px;
-  width: 117px;
-  height: 45px;
+  padding: 12px 28px;
+  width: 93px;
+  height: 41px;
   background: #fd9222;
   font-weight: 600;
   font-size: 14px;
@@ -1377,5 +1377,53 @@ a {
 }
 .modal-container:invalid + .modal-svg {
   stroke: #e74a3b;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 517px;
+    min-height: 794px;
+    padding: 40px;
+  }
+  .modal-title {
+    margin-bottom: 40px;
+  }
+  .modal-box {
+    margin-bottom: 18px;
+  }
+  .modal-text {
+    font-size: 14px;
+  }
+  .modal-svg {
+    left: 24px;
+  }
+  .modal-container {
+    border-radius: 13px;
+    padding: 22px 24px 22px 62px;
+    width: 436px;
+    height: 68px;
+  }
+  .modal-commemt-container {
+    border-radius: 13px;
+    padding: 22px 24px 93px 24px;
+    width: 437px;
+    height: 140px;
+    font-size: 18px;
+  }
+  .checkbox {
+    margin-bottom: 40px;
+  }
+  .modal-label {
+    width: 437px;
+    align-items: center;
+  }
+
+  .modal-checkbox-text {
+    font-size: 14px;
+  }
+  .modal-btn {
+    padding: 14px 40px;
+    width: 117px;
+    height: 45px;
+  }
 }
 /*#endregion modal-overlay*/

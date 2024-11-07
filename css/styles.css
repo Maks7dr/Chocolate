@@ -96,6 +96,12 @@ a {
     width: 1200px;
   }
 }
+@media screen and (max-width: 374px) {
+  .hero {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 
 /* #region header*/
 
@@ -231,7 +237,7 @@ a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-width: 335px;
+  max-width: 335px;
 }
 
 .hero-title {

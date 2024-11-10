@@ -69,15 +69,15 @@
           </a>
         </li>
       </ul>
-      <button type="button" class="menu-btn">
+      <button type="button" class="menu-btn js-open-menu">
         <svg width="28" height="28" class="menu-icon">
           <use href="./images/icons.svg#menu-icon"></use>
         </svg>
       </button>
       <!-- mobile menu -->
-      <div class="mobile-menu">
+      <div class="mobile-menu js-menu-container">
         <div class="container mobile-menu-container">
-          <button type="button" class="exit">
+          <button type="button" class="exit js-close-menu">
             <svg width="28" height="28" class="exit-white">
               <use href="./images/icons.svg#exit"></use>
             </svg>
@@ -793,6 +793,13 @@
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal-menu.js"></script>
   </body>
 </html>

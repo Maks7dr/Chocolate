@@ -636,7 +636,9 @@
             </p>
           </li>
         </ul>
-        <button type="button" class="rewiews-btn">Leave a review</button>
+        <button type="button" class="rewiews-btn" data-modal-open>
+          Leave a review
+        </button>
       </section>
     </main>
     <footer class="container footer">
@@ -712,9 +714,9 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open" data-modal>
       <div class="modal">
-        <button type="button" class="exit">
+        <button type="button" class="exit" data-modal-close>
           <svg width="28" height="28" class="exit-black">
             <use href="./images/icons.svg#exit"></use>
           </svg>
@@ -791,6 +793,6 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal-menu.js"></script>
   </body>
 </html>

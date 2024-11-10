@@ -1442,7 +1442,7 @@ a {
   transform: translateX(0%);
   opacity: 1;
   visibility: visible;
-  pointer-events: none;
+  pointer-events: auto;
 }
 .mobile-menu-container {
   position: relative;

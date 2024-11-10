@@ -1440,9 +1440,6 @@ a {
 }
 .mobile-menu.is-open {
   transform: translateX(0%);
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
 }
 .mobile-menu-container {
   position: relative;

@@ -425,6 +425,29 @@ a {
   .benefits-list {
     align-items: flex-start;
   }
+  .current {
+    position: relative;
+  }
+  .current::after {
+    content: "";
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 124px;
+    height: 0px;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    left: -106px;
+  }
+  .current::before {
+    content: "";
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 124px;
+    height: 0px;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    right: -106px;
+  }
 }
 /* #endregion benefits*/
 

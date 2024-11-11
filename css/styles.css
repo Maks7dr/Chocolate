@@ -929,6 +929,9 @@ a {
   position: absolute;
   bottom: 120px;
 }
+.rewiews-img {
+  margin-bottom: 18px;
+}
 .hiddens-rewiews {
   display: none;
 }

@@ -65,8 +65,6 @@ a {
     line-height: 1.17;
   }
 }
-/* #endregion*/
-
 .container {
   width: 375px;
   margin-left: auto;
@@ -94,6 +92,7 @@ a {
     margin-right: 20px;
   }
 }
+/* #endregion*/
 
 /* #region header*/
 
@@ -1474,6 +1473,16 @@ a {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+.exit-mobile {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
 }
 .exit-white {
   stroke: #fafafa;

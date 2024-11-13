@@ -15,12 +15,12 @@
   refs.modal.addEventListener("click", removeModal);
   function removeModal(e) {
     if (e.target === e.currentTarget) {
-      refs.modal.classList.add("is-open");
+      refs.modal.classList.add("is-hidden");
     }
   }
 
   function toggleModal() {
-    refs.modal.classList.toggle("is-open");
+    refs.modal.classList.toggle("is-hidden");
     document.body.classList.toggle("no-scroll");
   }
 })();
